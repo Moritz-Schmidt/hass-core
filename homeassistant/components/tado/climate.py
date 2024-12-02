@@ -624,7 +624,7 @@ class TadoClimate(TadoZoneEntity, ClimateEntity):
         self._tado_zone_data = self._tado.data["zone"][self.zone_id]
 
         if self._tado.is_x:
-            self._tado_zone_temp_offset["offsent_celsius"] = self._tado.data["device"][
+            self._tado_zone_temp_offset["offset_celsius"] = self._tado.data["device"][
                 self._device_id
             ][TEMP_OFFSET]
         else:
